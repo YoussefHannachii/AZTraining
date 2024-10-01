@@ -70,6 +70,7 @@ az vm create \                                    # Command to create a virtual 
   --generate-ssh-keys \                           # Automatically generates SSH keys for authentication to the Linux VM
   --size Standard_B2s \                           # VM size (Standard_B2s defines the virtual machine’s CPU and memory configuration)
   --location eastus                               # Specifies the Azure region (eastus is East US region)
+```
 
 Configure the networking , In this case accept ssh connections:
 ```bash
@@ -77,11 +78,12 @@ az vm open-port \                                 # Command to open a network po
   --resource-group MyResourceGroup \              # The resource group where the VM is located
   --name MyLinuxVM \                              # The name of the VM (MyLinuxVM is the VM’s name)
   --port 22                                       # Port to open (22 is the default port for SSH to connect to a Linux VM)
-
+```
 
 Connect via ssh to the Machine: 
 ```bash
 ssh azureuser@<PublicIP>                         # Command to connect to the Linux VM via SSH
+```
 
 Once the VM stopped you can take a snapshot as follows: 
 ```bash
@@ -89,6 +91,7 @@ az snapshot create \                              # Command to create a snapshot
   --resource-group MyResourceGroup \              # The resource group where the snapshot will be created
   --name MyLinuxSnapshot \                         # Name of the snapshot (MyLinuxSnapshot is the name assigned to the snapshot)
   --source $(az vm show --resource-group MyResourceGroup --name MyLinuxVM --query "storageProfile.osDisk.managedDisk.id" -o tsv)  # Specifies the disk to take the snapshot from
+```
 
 
 
