@@ -33,7 +33,7 @@ Here is our virtual machine up and running. To finish the task at hand, I instal
 
 ```bash
 sudo apt install tree
-# Azure Virtual Machine Configuration
+```
 
 This repository contains instructions and configurations for creating and managing Azure Virtual Machines (VMs).
 
@@ -58,6 +58,7 @@ Then create a ressources group where you will attach you Virtual Machine:
 az group create \                                 # Command to create a new resource group
   --name MyResourceGroup \                        # Name of the resource group (MyResourceGroup is the name you assign)
   --location eastus                               # Azure region where the resources will be deployed (eastus refers to the East US region)
+```
 
 Deploy our Machine : 
 ```bash
