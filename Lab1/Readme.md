@@ -51,6 +51,7 @@ Here are the steps to do so:
 Start with loging in to azure : 
 ```bash
 az login                                          # Logs you into your Azure account
+```
 
 Then create a ressources group where you will attach you Virtual Machine:
 ```bash
