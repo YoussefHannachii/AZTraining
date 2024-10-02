@@ -24,7 +24,7 @@ and u need to use the azure ai services credentials {endpoint,keys}
 ![Credentials ](https://github.com/YoussefHannachii/AZTraining/blob/master/Lab8/images/3.PNG)
 
 and use them in the api as follows.
-![function](https://github.com/YoussefHannachii/AZTraining/blob/master/Lab8/images/5.PNG)
+![function](https://github.com/YoussefHannachii/AZTraining/blob/master/Lab8/images/4.PNG)
 
 And now after runing our server we can use postman to test if everything is working.
-![Postman test](https://github.com/YoussefHannachii/AZTraining/blob/master/Lab8/images/6.PNG)
+![Postman test](https://github.com/YoussefHannachii/AZTraining/blob/master/Lab8/images/5.PNG)
